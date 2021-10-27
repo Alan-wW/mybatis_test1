@@ -1,0 +1,24 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: mybatis_test1
+
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://81.70.245.58:3306/alan_test?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    #username: Alan_test
+    #password: ZhPjsx8Na7DHFpBJ
+    url: jdbc:mysql://localhost:3306/user?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    username: root
+    password: root
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.alan.test.entity
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.alan.test.mapper: debug
+
