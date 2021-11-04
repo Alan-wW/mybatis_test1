@@ -27,13 +27,13 @@
 
     <select id="getList" resultMap="stu_sub">
         SELECT
-            stu.id,sub.id as sduId,stu.name,stu.age,stu.sex,sub.course_name,sub.introduce
+            stu.id,sub.id as subId,stu.name,stu.age,stu.sex,sub.course_name,sub.introduce
         FROM
             student stu
                 LEFT JOIN
             subject sub
             on
-                stu.id = sub.stu_id
+                stu.id = sub.id
     </select>
     <!--查询指定行数据-->
     <select id="queryAllByLimit" resultMap="StudentMap">

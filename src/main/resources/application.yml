@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 spring:
   application:
     name: mybatis_test1
@@ -9,9 +9,9 @@ spring:
     #url: jdbc:mysql://81.70.245.58:3306/alan_test?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     #username: Alan_test
     #password: ZhPjsx8Na7DHFpBJ
-    url: jdbc:mysql://localhost:3306/user?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=gbk&useSSL=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
     username: root
-    password: root
+    password: Xb005869@
 
 mybatis:
   mapper-locations: classpath:mapper/*.xml
